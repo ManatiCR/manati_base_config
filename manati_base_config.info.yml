@@ -1,0 +1,20 @@
+name: Manatí Base Config
+description: "Provides the base config for contrib modules used by Manati."
+type: module
+package: Manatí
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - admin_toolbar:admin_toolbar_tools
+  - pathauto:pathauto
+  - devel:devel
+  - twig_tweak:twig_tweak
+  - svg_image:svg_image
+  - xmlsitemap:xmlsitemap_engines
+  - metatag:metatag_twitter_cards
+  - metatag:metatag_open_graph
+  - seckit:seckit
+  - quicklink:quicklink
+  - better_exposed_filters:better_exposed_filters
+  - environment_indicator:environment_indicator
+  - stage_file_proxy:stage_file_proxy
+  - config_split:config_split

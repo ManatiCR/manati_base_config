@@ -1,0 +1,19 @@
+{
+  "name": "manaticr/manati_base_config",
+  "description": "The base config used by Manatí to build sites.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Manati",
+      "email": "info@estudiomanati.com"
+    },
+    {
+      "name": "Marvin J. Cortés",
+      "email": "marvin@estudiomanati.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {}
+}

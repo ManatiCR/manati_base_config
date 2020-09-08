@@ -1,6 +1,6 @@
 # Manatí Base Config Module
 
-This module is used **only to import and enable the config** from the contrib modules used by Manatí. This module should be used along with the [Bloom](https://github.com/ManatiCR/bloom) profile.
+This module is used **only to import and enable custom config** of contrib modules used by Manatí. This module should be used along with the [Bloom](https://github.com/ManatiCR/bloom) profile.
 
 ## How to use it?
 
@@ -8,7 +8,7 @@ Install the drupal site using [Bloom](https://github.com/ManatiCR/bloom) install
 
 Add the `manati_base_config` to your composer dependencies.
 
-```bash
+```php
 composer require manaticr/manati_base_config
 ```
 

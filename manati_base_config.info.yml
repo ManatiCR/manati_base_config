@@ -5,24 +5,24 @@ package: Manatí
 core_version_requirement: ^8.8 || ^9
 dependencies:
   - admin_toolbar:admin_toolbar_tools
-  - pathauto:pathauto
-  - devel:devel
-  - twig_tweak:twig_tweak
-  - svg_image:svg_image
-  - xmlsitemap:xmlsitemap_engines
-  - metatag:metatag_twitter_cards
-  - metatag:metatag_open_graph
-  - seckit:seckit
-  - quicklink:quicklink
   - better_exposed_filters:better_exposed_filters
-  - environment_indicator:environment_indicator
-  - stage_file_proxy:stage_file_proxy
   - config_split:config_split
-  - shs:shs
-  - retina_images:retina_images
-  - image_style_quality:image_style_quality
+  - devel:devel
+  - environment_indicator:environment_indicator
   - focal_point:focal_point
-  - media_library:media_library
+  - image_style_quality:image_style_quality
   - media_entity_facebook:media_entity_facebook
   - media_entity_instagram:media_entity_instagram
   - media_entity_twitter:media_entity_twitter
+  - media_library:media_library
+  - metatag:metatag_open_graph
+  - metatag:metatag_twitter_cards
+  - pathauto:pathauto
+  - quicklink:quicklink
+  - retina_images:retina_images
+  - seckit:seckit
+  - shs:shs
+  - stage_file_proxy:stage_file_proxy
+  - svg_image:svg_image
+  - twig_tweak:twig_tweak
+  - xmlsitemap:xmlsitemap_engines

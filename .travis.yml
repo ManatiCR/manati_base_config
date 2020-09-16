@@ -21,8 +21,6 @@ before_install:
   - composer require drupal/media_entity_facebook
   - composer require drupal/media_entity_instagram
   - composer require drupal/media_entity_twitter
-  - composer require drupal/media_library
-  - composer require drupal/metatag
   - composer require drupal/metatag
   - composer require drupal/pathauto
   - composer require drupal/quicklink

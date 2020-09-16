@@ -7,17 +7,15 @@ env:
   - COMPOSER_MEMORY_LIMIT=-1 COMPOSER_MIRROR_PATH_REPOS=1
 before_install:
   - cd ~
-  - composer create-project drupal/recommended-project:^8.9 test-bloom --no-interaction
-  - cd test-bloom
+  - composer create-project manaticr/platformsh-drupal-template:^1.0 test-site --no-interaction
+  - cd test-site
   - composer config repositories.chirripo path $TRAVIS_BUILD_DIR
   - composer config extra.enable-patching true
-  - composer require manaticr/bloom:^1.0
-  - composer require drush/drush
 before_script:
-  - cd ~/test-bloom
+  - cd ~/test-site
   - composer require manaticr/manati_base_config:"*"
 script:
   - ./vendor/bin/drush si bloom -y --db-url=sqlite://tmp/.ht.sqlite
   - ./vendor/bin/drush en manati_base_config
   - ./vendor/bin/drush pmu manati_base_config
-  - ./vendor/bin/drush cim --source=./modules/contrib/manati_base_config/config/partial --partial
+  - ./vendor/bin/drush cim --source=./modules/contrib/manati_base_config/config/partial --partial -y

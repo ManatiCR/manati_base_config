@@ -11,33 +11,12 @@ before_install:
   - cd test-site
   - composer config repositories.chirripo path $TRAVIS_BUILD_DIR
   - composer config extra.enable-patching true
-  - composer require drupal/admin_toolbar
-  - composer require drupal/better_exposed_filters
-  - composer require drupal/config_split
-  - composer require drupal/devel
-  - composer require drupal/environment_indicator
-  - composer require drupal/focal_point
-  - composer require drupal/image_style_quality
-  - composer require drupal/media_entity_facebook
-  - composer require drupal/media_entity_instagram
-  - composer require drupal/media_entity_twitter
-  - composer require drupal/metatag
-  - composer require drupal/pathauto
-  - composer require drupal/quicklink
-  - composer require drupal/retina_images
-  - composer require drupal/seckit
-  - composer require drupal/shs
-  - composer require drupal/stage_file_proxy
-  - composer require drupal/svg_image
-  - composer require drupal/twig_tweak
-  - composer require drupal/xmlsitemap
-  - composer require drush/drush
-  - composer require manaticr/bloom:^1.0
+  - composer require drupal/admin_toolbar drupal/better_exposed_filters drupal/config_split drupal/devel drupal/environment_indicator drupal/focal_point drupal/image_style_quality drupal/media_entity_facebook drupal/media_entity_instagram drupal/media_entity_twitter drupal/metatag drupal/pathauto drupal/quicklink drupal/retina_images drupal/seckit drupal/shs drupal/stage_file_proxy drupal/svg_image drupal/twig_tweak drupal/xmlsitemap drush/drush manaticr/bloom:^1.0
 before_script:
   - cd ~/test-site
   - composer require manaticr/manati_base_config:"*"
 script:
   - ./vendor/bin/drush si bloom -y --db-url=sqlite://tmp/.ht.sqlite
-  - ./vendor/bin/drush en manati_base_config
-  - ./vendor/bin/drush pmu manati_base_config
-  - ./vendor/bin/drush cim --source=./modules/contrib/manati_base_config/config/partial --partial -y
+  - ./vendor/bin/drush en manati_base_config -y
+  - ./vendor/bin/drush pmu manati_base_config -y
+  - ./vendor/bin/drush cim -y --source=./modules/contrib/manati_base_config/config/partial --partial

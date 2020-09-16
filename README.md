@@ -1,4 +1,4 @@
-# Manatí Base Config Module
+# Manatí Base Config Module [![Build Status](https://travis-ci.org/ManatiCR/manati-base-config.svg?branch=8.x)](https://travis-ci.org/ManatiCR/manati-base-config)
 
 This module is used **only to import and enable custom config** of contrib modules used by Manatí. This module should be used along with the [Bloom](https://github.com/ManatiCR/bloom) profile.
 

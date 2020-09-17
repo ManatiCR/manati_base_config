@@ -7,7 +7,7 @@ env:
   - COMPOSER_MEMORY_LIMIT=-1 COMPOSER_MIRROR_PATH_REPOS=1
 before_install:
   - cd ~
-  - composer create-project manaticr/platformsh-drupal-template:8.x-dev test-site --no-interaction
+  - composer create-project manaticr/platformsh-drupal-template:8.x-dev test-site --stability dev --no-interaction
   - cd test-site
   - composer install
   - composer config repositories.manati_base_config path $TRAVIS_BUILD_DIR

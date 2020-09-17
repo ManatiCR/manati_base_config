@@ -8,7 +8,7 @@ label: 'Twitter post'
 description: 'This media entity allows you to add a Twitter Post.'
 source: twitter
 queue_thumbnail_downloads: false
-new_revision: false
+new_revision: true
 source_configuration:
   source_field: field_media_twitter
   use_twitter_api: false

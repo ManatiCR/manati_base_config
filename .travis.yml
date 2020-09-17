@@ -7,8 +7,9 @@ env:
   - COMPOSER_MEMORY_LIMIT=-1 COMPOSER_MIRROR_PATH_REPOS=1
 before_install:
   - cd ~
-  - composer create-project manaticr/platformsh-drupal-template:8.x-dev test-site --stability dev --no-interaction
+  - composer create-project manaticr/platformsh-drupal-template:8.x-dev test-site --stability dev --no-interaction --no-install
   - cd test-site
+  - composer install
   - composer config repositories.chirripo path $TRAVIS_BUILD_DIR
   - composer config extra.enable-patching true
 before_script:

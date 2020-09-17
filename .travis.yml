@@ -7,11 +7,10 @@ env:
   - COMPOSER_MEMORY_LIMIT=-1 COMPOSER_MIRROR_PATH_REPOS=1
 before_install:
   - cd ~
-  - composer create-project drupal/recommended-project:^8.9 test-site --no-interaction
+  - composer create-project manaticr/platformsh-drupal-template:8.x-dev test-site --no-interaction
   - cd test-site
   - composer config repositories.chirripo path $TRAVIS_BUILD_DIR
   - composer config extra.enable-patching true
-  - composer require drupal/admin_toolbar drupal/better_exposed_filters drupal/config_split drupal/devel drupal/environment_indicator drupal/focal_point drupal/image_style_quality drupal/media_entity_facebook drupal/media_entity_instagram drupal/media_entity_twitter drupal/metatag drupal/pathauto drupal/quicklink drupal/retina_images:1.x-dev drupal/seckit drupal/shs drupal/stage_file_proxy drupal/svg_image drupal/twig_tweak drupal/xmlsitemap drush/drush manaticr/bloom:^1.0
 before_script:
   - cd ~/test-site
   - composer require manaticr/manati_base_config:"*"

@@ -2,7 +2,7 @@ name: Manatí Base Config
 description: "Provides the base config for contrib modules used by Manati."
 type: module
 package: Manatí
-core: 8.x
+core_version_requirement: ^8 || ^9
 dependencies:
   - admin_toolbar:admin_toolbar_tools
   - better_exposed_filters:better_exposed_filters
@@ -19,7 +19,6 @@ dependencies:
   - metatag:metatag_twitter_cards
   - pathauto:pathauto
   - quicklink:quicklink
-  - retina_images:retina_images
   - seckit:seckit
   - shs:shs
   - stage_file_proxy:stage_file_proxy

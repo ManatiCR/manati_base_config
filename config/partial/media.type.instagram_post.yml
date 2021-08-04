@@ -6,7 +6,7 @@ dependencies:
 id: instagram_post
 label: 'Instagram post'
 description: 'This media entity allows you to add an Instagram Post.'
-source: instagram
+source: 'oembed:instagram'
 queue_thumbnail_downloads: false
 new_revision: true
 source_configuration:
